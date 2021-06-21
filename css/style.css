@@ -1,0 +1,288 @@
+/*banner*/
+.banner {
+    position: relative;
+    background: var(--c5);
+}
+/*left-right*/
+.banner .right,
+.banner .left {
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    background: #ffffff50;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.banner .right {
+    right: 10px;
+}
+
+.banner .left {
+    left: 10px;
+}
+
+.banner .right:hover,
+.banner .left:hover {
+    background: var(--c1);
+}
+
+.banner .right:hover .demo-icon,
+.banner .left:hover .demo-icon{
+    color: #000;
+}
+
+.banner .right .demo-icon,
+.banner .left .demo-icon {
+    color: var(--c1);
+    line-height: 50px;
+}
+/*left-right*/
+/*parent*/
+.banner .parent .child {
+    transition: opacity .5s ease-in;
+    min-height: 600px
+}
+
+.banner .parent .child.b-1{
+    background: url(../img/banner-01.jpg) center;
+    background-size: cover;
+}
+
+.banner .parent .child.b-2{
+    background: url(../img/banner-02.jpg) center;
+    background-size: cover;
+}
+
+.banner .parent .child.b-3{
+    background: url(../img/banner-03.jpg) center;
+    background-size: cover;
+}
+
+.banner .parent .child.hidden {
+    opacity: 0;
+}
+
+.banner .parent .child .overflow {
+    position: absolute;
+    top: calc(50% + 60px);
+    left: 10px;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.banner .parent .child .overflow .caption {
+    background: var(--c2);
+    font-family: var(--f1);
+    padding-left: 25px;
+    padding-right: 25px
+}
+
+.banner .parent .child .overflow .caption p {
+    margin: 0;
+    padding: 10px 0;
+    color: var(--c1);
+    font-size: 50px
+}
+
+.banner .parent .child .overflow .detail {
+    background: var(--c1);
+    font-family: var(--f2);
+    font-weight: 100;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.banner .parent .child .overflow .detail p {
+    margin: 0;
+    padding: 15px 0;
+    color: #000;
+    font-size: 20px
+}
+/*parent*/
+/*bollets*/
+.bollets {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.bollets span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #ffffff50;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bollets span.active,
+.bollets span:hover {
+    background: var(--c1)
+}
+/*bollets*/
+/*banner*/
+
+/*grid*/
+.grid {
+    background: var(--c5);
+    padding: 50px 0;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 
+                        "one two three three"
+                        "four five three three";
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.grid .child-grid:not(.three) {
+    height: 250px;
+    background: yellow;
+    color: var(--c1);
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    font-family: var(--f2);
+}
+
+.grid .child-grid.one {
+    grid-area: one;
+    background: var(--c2)
+}
+
+.grid .child-grid.two {
+    grid-area: two;
+    background: var(--c4)
+}
+
+.grid .child-grid.three {
+    height: 515px;
+    grid-area: three;
+    overflow: hidden;
+}
+
+.grid .child-grid.four {
+    grid-area: four;
+    background: #E4A600
+}
+
+.grid .child-grid.five {
+    grid-area: five;
+    background: #00B5A6
+}
+
+.grid .child-grid .demo-icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.grid .child-grid p {
+    margin: 0;
+    padding: 0
+}
+/*grid*/
+/*parallax*/
+.parallax {
+    padding: 70px 0;
+    background: var(--c5);
+    color: var(--c1);
+    text-align: center;
+}
+
+.parallax h2 {
+    font-family: var(--f1);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.parallax p {
+    font-family: var(--f2);
+    color: var(--c3)
+}
+
+/*parallax*/
+/*half-page*/
+.half-page {
+    background: var(--c5);
+    color: var(--c1)
+}
+
+.half-page .image img {
+    width: 100%;
+}
+
+.half-page .text {
+    padding: 20px;
+    background: var(--c4)
+}
+
+.half-page .text h2 {
+    font-size: 26px;
+    font-family: var(--f1);
+    margin-bottom: 20px;
+}
+
+.half-page .text p {
+    font-family: var(--f2);
+    margin: 26.5px 0;
+}
+
+.half-page .text p span {
+    color: var(--c3)
+}
+/*half-page*/
+/*images*/
+.images {
+    background: var(--c5);
+    padding: 80px 0;
+}
+
+.images h2 {
+    font-family: var(--f1);
+    font-size: 26px;
+    margin: 0;
+    color: var(--c1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.images img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+/*images*/
+/*social*/
+.social {
+    background: var(--c5)
+}
+
+.social .media {
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.social .facebook {
+    background: #3B5998
+}
+.social .twitter {
+    background: #55ACEE;
+}
+.social .youtube {
+    background: #BB0000;
+}
+.social .instagram {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+}
+
+.social .media .demo-icon {
+    color: var(--c1);
+    font-size: 90px;
+    line-height: 180px;
+    cursor: pointer;
+}
+/*social*/

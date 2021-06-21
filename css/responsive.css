@@ -1,0 +1,124 @@
+                                                    /* strat responsive */
+
+
+@media (max-width:767px) /* extra small screen */ {
+    nav.nav .logo {
+        float: none !important;
+        display: block;
+        margin: 40px auto;
+    }
+
+    nav.nav ul {
+        display: none;
+        opacity: 0;
+    }
+    
+    .banner .parent .child .overflow {
+        display: none;
+    }
+
+    .grid {
+        grid-template-areas: 
+        "one two"
+        "three three"
+        "four five";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid .child-grid.three {
+        height: unset
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:991px) /* small screen */ {
+    nav.nav .logo {
+        float: none !important;
+        display: block;
+        margin: 40px auto;
+    }
+
+    nav.nav ul {
+        display: none;
+        opacity: 0;
+    }
+
+    .grid {
+        grid-template-areas: 
+        "one two"
+        "three three"
+        "four five";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid .child-grid.three {
+        height: unset
+    }
+}
+
+
+
+@media (min-width:992px) and (max-width:1199px) /* medium screen */ {
+    .demo-icon.icon-tasks {
+        display: none;
+    }
+
+    nav.nav ul {
+        opacity: 1 !important;
+    }
+
+    nav.nav ul.show {
+        width: unset;
+        position: static;
+        background: none;
+        padding: 25px 0;
+    }
+
+    nav.nav ul.show li {
+        display: inline-block;
+        text-align: unset;
+        margin: 0
+    }
+
+    .grid .child-grid:not(.three) {
+        font-size: 18px;
+        padding: 50px
+    }
+
+    .grid .child-grid .demo-icon {
+        font-size: 50px;
+    }
+
+    .half-page .text p {
+        margin: 0 0 10px;
+    }
+}
+
+
+
+@media (min-width:1200px) /* large screen */ {
+    .demo-icon.icon-tasks {
+        display: none;
+    }
+
+    nav.nav ul {
+        opacity: 1 !important;
+    }
+
+    nav.nav ul.show {
+        width: unset;
+        position: static;
+        background: none;
+        padding: 25px 0;
+    }
+
+    nav.nav ul.show li {
+        display: inline-block;
+        text-align: unset;
+        margin: 0
+    }
+}
+
+
+                                                    /* end responsive */
